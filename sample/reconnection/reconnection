@@ -311,7 +311,7 @@ begin_initialization {
 #endif
 
 
-  double nx = 128;
+  double nx = 64;
   double ny = 64;
   double nz = 64;
 
@@ -386,7 +386,8 @@ begin_initialization {
   ///////////////////////////////////////////////
   // Setup high level simulation parameters
   num_step             = int(taui/(wci*dt));
-  num_step             = 5000;
+  //num_step             = 5000;
+  num_step             = 200;
   status_interval      = 200;
   sync_shared_interval = status_interval/2;
   clean_div_e_interval = status_interval/2;
